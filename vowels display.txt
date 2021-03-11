@@ -1,0 +1,31 @@
+s=input("Enter the sentence")
+print("Vowels in sentence-")
+ac=0    #count for a
+ec=0    #count for e
+ic=0    #count for i
+oc=0    #count for o
+uc=0    #count for u
+count=[]
+for i in s:
+  if(i=="a" or i=="A"):       #checking for a and A
+    ac+=1
+    count.append("a")
+  elif(i=="e" or i=="E"):     #checking for e and E
+    ec+=0
+    count.append("e")
+  elif(i=="i" or i=="I"):     #checking for i and I
+    ic+=1
+    count.append("i")
+  elif(i=="o" or i=="O"):     #checking for o and O
+    oc+=1
+    count.append("o")
+  elif(i=="u" or i=="U"):     #checking for u and U
+    uc+=1
+    count.append("u")
+#print vowels which are present in string with no. of occurence.
+print("Vowels in sentence-",count)
+print("a: ",ac)
+print("e: ",ec)
+print("i: ",ic)
+print("o: ",oc)
+print("u: ",uc)
